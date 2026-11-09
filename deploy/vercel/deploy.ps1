@@ -14,8 +14,12 @@ $site = Join-Path $PSScriptRoot 'site'
 Write-Host "Building the web app for $ApiUrl ..."
 Push-Location (Join-Path $root 'app')
 try {
-    flutter build web --release --dart-define=API_URL=$ApiUrl
-    if ($LASTEXITCODE -ne 0) { throw 'flutter build web failed' }
+    # flutter prints progress notes to stderr; only its exit code decides success
+    $ErrorActionPreference = 'Continue'
+    flutter build web --release --dart-define=API_URL=$ApiUrl 2>&1 | ForEach-Object { "$_" }
+    $code = $LASTEXITCODE
+    $ErrorActionPreference = 'Stop'
+    if ($code -ne 0) { throw 'flutter build web failed' }
 } finally { Pop-Location }
 
 # Copy into a fixed folder so Vercel's project link (.vercel) survives rebuilds.
