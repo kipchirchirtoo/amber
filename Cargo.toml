@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = ["engine", "cli", "server"]
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+license = "Proprietary"
+publish = false
+
+# Password hashing is deliberately slow; keep it usable in debug test builds.
+[profile.dev.package.argon2]
+opt-level = 3
+[profile.dev.package.blake2]
+opt-level = 3

@@ -1,0 +1,12 @@
+target/
+Cargo.lock.bak
+
+# secrets and local settings: never commit these
+.env
+render.env
+*.local
+
+# deployment working folders
+deploy/backups/
+deploy/vercel/site/
+.vercel/

@@ -1,0 +1,29 @@
+# Caddy gets and renews the HTTPS certificate for {$DOMAIN} by itself.
+# It serves the web app and forwards the API to the server, so the browser sees
+# ONE address (no cross-site settings needed).
+
+{$DOMAIN} {
+	encode zstd gzip
+
+	request_body {
+		max_size 2MB
+	}
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "no-referrer"
+		-Server
+	}
+
+	@api path /api/* /health
+	handle @api {
+		reverse_proxy server:8080
+	}
+
+	handle {
+		root * /srv/web
+		try_files {path} /index.html
+		file_server
+	}
+}

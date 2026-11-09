@@ -1,0 +1,66 @@
+# Amber Stores: database + server + web front (automatic HTTPS).
+# Usage (from this folder):  docker compose up -d --build
+# Settings come from deploy/.env (copy .env.example and fill it in).
+
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: amber
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD in .env}
+      POSTGRES_DB: amber
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U amber -d amber"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  server:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://amber:${DB_PASSWORD}@db:5432/amber
+      BIND: 0.0.0.0:8080
+      # Only used while no user exists yet: creates the first administrator.
+      AMBER_BOOTSTRAP_ADMIN: ${BOOTSTRAP_ADMIN:-}
+      # Leave empty to switch the AI assistant off.
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      AMBER_AI_MODEL: ${AMBER_AI_MODEL:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      AMBER_OPENAI_MODEL: ${AMBER_OPENAI_MODEL:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      AMBER_GEMINI_MODEL: ${AMBER_GEMINI_MODEL:-}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      AMBER_GROQ_MODEL: ${AMBER_GROQ_MODEL:-}
+      AMBER_AI_PROVIDER: ${AMBER_AI_PROVIDER:-}
+    # No published ports: the only way in is through the web service below.
+
+  web:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      - server
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    environment:
+      DOMAIN: ${DOMAIN:?set DOMAIN in .env}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ../app/build/web:/srv/web:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  dbdata:
+  caddy_data:
+  caddy_config:

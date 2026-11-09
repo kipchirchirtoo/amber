@@ -1,0 +1,16 @@
+[package]
+name = "amber_cli"
+description = "Command-line front end for the Amber Stores calculation engine"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "amber"
+path = "src/main.rs"
+
+[dependencies]
+amber_engine = { path = "../engine" }
+rust_decimal = "1"
+serde_json = "1"

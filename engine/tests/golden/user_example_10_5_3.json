@@ -1,0 +1,938 @@
+{
+  "rules_version": "amber-brief-1.0",
+  "total_windows": 18,
+  "aluminium": {
+    "rules_version": "amber-brief-1.0",
+    "profiles": [
+      {
+        "profile": "top_track",
+        "total_pieces": 18,
+        "total_length_mm": "21280.8",
+        "total_length_ft": "69.818897637795275590551181102",
+        "cuts": [
+          {
+            "length_mm": "1504",
+            "count": 5
+          },
+          {
+            "length_mm": "1199.2",
+            "count": 10
+          },
+          {
+            "length_mm": "589.6",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "profile": "bottom_track",
+        "total_pieces": 18,
+        "total_length_mm": "21280.8",
+        "total_length_ft": "69.818897637795275590551181102",
+        "cuts": [
+          {
+            "length_mm": "1504",
+            "count": 5
+          },
+          {
+            "length_mm": "1199.2",
+            "count": 10
+          },
+          {
+            "length_mm": "589.6",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "profile": "side_track",
+        "total_pieces": 36,
+        "total_length_mm": "40233.6",
+        "total_length_ft": "132",
+        "cuts": [
+          {
+            "length_mm": "1219.2",
+            "count": 30
+          },
+          {
+            "length_mm": "609.6",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "profile": "meeting_profile",
+        "total_pieces": 36,
+        "total_length_mm": "39153.6",
+        "total_length_ft": "128.45669291338582677165354331",
+        "cuts": [
+          {
+            "length_mm": "1189.2",
+            "count": 30
+          },
+          {
+            "length_mm": "579.6",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "profile": "locking_profile",
+        "total_pieces": 36,
+        "total_length_mm": "39153.6",
+        "total_length_ft": "128.45669291338582677165354331",
+        "cuts": [
+          {
+            "length_mm": "1189.2",
+            "count": 30
+          },
+          {
+            "length_mm": "579.6",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "profile": "sash",
+        "total_pieces": 72,
+        "total_length_mm": "44721.6",
+        "total_length_ft": "146.72440944881889763779527559",
+        "cuts": [
+          {
+            "length_mm": "782",
+            "count": 20
+          },
+          {
+            "length_mm": "629.6",
+            "count": 40
+          },
+          {
+            "length_mm": "324.8",
+            "count": 12
+          }
+        ]
+      }
+    ],
+    "grand_total_pieces": 216,
+    "grand_total_length_mm": "205824.0",
+    "grand_total_length_ft": "675.27559055118110236220472441"
+  },
+  "aluminium_consumption_cost_ksh": "64311.961004874390701162354707",
+  "stock_option_a": {
+    "rules_version": "amber-brief-1.0",
+    "kerf_mm": "0",
+    "profiles": [
+      {
+        "profile": "top_track",
+        "status": "verified",
+        "issues": [],
+        "total_cuts": 18,
+        "required_length_mm": "21280.8",
+        "existing_available_mm": "0",
+        "ignored_unconfirmed_pieces": 0,
+        "shortage_length_mm": "21280.8",
+        "shortage_length_ft": "69.818897637795275590551181102",
+        "shortage_cost_proportional_ksh": "6649.4188226471691038620172479",
+        "new_bars_to_buy": 4,
+        "full_bar_purchase_cost_ksh": "8000",
+        "existing_pieces_used": 0,
+        "lower_bound_bars_without_existing": 4,
+        "bins": [
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1504",
+              "1504",
+              "1504",
+              "1504"
+            ],
+            "used_mm": "6016",
+            "remaining_mm": "384.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1504",
+              "1199.2",
+              "1199.2",
+              "1199.2",
+              "1199.2"
+            ],
+            "used_mm": "6300.8",
+            "remaining_mm": "100.0"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1199.2",
+              "1199.2",
+              "1199.2",
+              "1199.2",
+              "1199.2"
+            ],
+            "used_mm": "5996.0",
+            "remaining_mm": "404.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1199.2",
+              "589.6",
+              "589.6",
+              "589.6"
+            ],
+            "used_mm": "2968.0",
+            "remaining_mm": "3432.8"
+          }
+        ],
+        "leftover_mm": [
+          "3432.8",
+          "404.8",
+          "384.8",
+          "100.0"
+        ],
+        "unplaced": []
+      },
+      {
+        "profile": "bottom_track",
+        "status": "verified",
+        "issues": [],
+        "total_cuts": 18,
+        "required_length_mm": "21280.8",
+        "existing_available_mm": "0",
+        "ignored_unconfirmed_pieces": 0,
+        "shortage_length_mm": "21280.8",
+        "shortage_length_ft": "69.818897637795275590551181102",
+        "shortage_cost_proportional_ksh": "6649.4188226471691038620172479",
+        "new_bars_to_buy": 4,
+        "full_bar_purchase_cost_ksh": "8000",
+        "existing_pieces_used": 0,
+        "lower_bound_bars_without_existing": 4,
+        "bins": [
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1504",
+              "1504",
+              "1504",
+              "1504"
+            ],
+            "used_mm": "6016",
+            "remaining_mm": "384.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1504",
+              "1199.2",
+              "1199.2",
+              "1199.2",
+              "1199.2"
+            ],
+            "used_mm": "6300.8",
+            "remaining_mm": "100.0"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1199.2",
+              "1199.2",
+              "1199.2",
+              "1199.2",
+              "1199.2"
+            ],
+            "used_mm": "5996.0",
+            "remaining_mm": "404.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1199.2",
+              "589.6",
+              "589.6",
+              "589.6"
+            ],
+            "used_mm": "2968.0",
+            "remaining_mm": "3432.8"
+          }
+        ],
+        "leftover_mm": [
+          "3432.8",
+          "404.8",
+          "384.8",
+          "100.0"
+        ],
+        "unplaced": []
+      },
+      {
+        "profile": "side_track",
+        "status": "verified",
+        "issues": [],
+        "total_cuts": 36,
+        "required_length_mm": "40233.6",
+        "existing_available_mm": "0",
+        "ignored_unconfirmed_pieces": 0,
+        "shortage_length_mm": "40233.6",
+        "shortage_length_ft": "132",
+        "shortage_cost_proportional_ksh": "12571.428571428571428571428572",
+        "new_bars_to_buy": 7,
+        "full_bar_purchase_cost_ksh": "14000",
+        "existing_pieces_used": 0,
+        "lower_bound_bars_without_existing": 7,
+        "bins": [
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2"
+            ],
+            "used_mm": "6096.0",
+            "remaining_mm": "304.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2"
+            ],
+            "used_mm": "6096.0",
+            "remaining_mm": "304.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2"
+            ],
+            "used_mm": "6096.0",
+            "remaining_mm": "304.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2"
+            ],
+            "used_mm": "6096.0",
+            "remaining_mm": "304.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2"
+            ],
+            "used_mm": "6096.0",
+            "remaining_mm": "304.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2",
+              "1219.2"
+            ],
+            "used_mm": "6096.0",
+            "remaining_mm": "304.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "609.6",
+              "609.6",
+              "609.6",
+              "609.6",
+              "609.6",
+              "609.6"
+            ],
+            "used_mm": "3657.6",
+            "remaining_mm": "2743.2"
+          }
+        ],
+        "leftover_mm": [
+          "2743.2",
+          "304.8",
+          "304.8",
+          "304.8",
+          "304.8",
+          "304.8",
+          "304.8"
+        ],
+        "unplaced": []
+      },
+      {
+        "profile": "meeting_profile",
+        "status": "verified",
+        "issues": [],
+        "total_cuts": 36,
+        "required_length_mm": "39153.6",
+        "existing_available_mm": "0",
+        "ignored_unconfirmed_pieces": 0,
+        "shortage_length_mm": "39153.6",
+        "shortage_length_ft": "128.45669291338582677165354331",
+        "shortage_cost_proportional_ksh": "12233.970753655793025871766030",
+        "new_bars_to_buy": 7,
+        "full_bar_purchase_cost_ksh": "14000",
+        "existing_pieces_used": 0,
+        "lower_bound_bars_without_existing": 7,
+        "bins": [
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "579.6",
+              "579.6",
+              "579.6",
+              "579.6",
+              "579.6",
+              "579.6"
+            ],
+            "used_mm": "3477.6",
+            "remaining_mm": "2923.2"
+          }
+        ],
+        "leftover_mm": [
+          "2923.2",
+          "454.8",
+          "454.8",
+          "454.8",
+          "454.8",
+          "454.8",
+          "454.8"
+        ],
+        "unplaced": []
+      },
+      {
+        "profile": "locking_profile",
+        "status": "verified",
+        "issues": [],
+        "total_cuts": 36,
+        "required_length_mm": "39153.6",
+        "existing_available_mm": "0",
+        "ignored_unconfirmed_pieces": 0,
+        "shortage_length_mm": "39153.6",
+        "shortage_length_ft": "128.45669291338582677165354331",
+        "shortage_cost_proportional_ksh": "12233.970753655793025871766030",
+        "new_bars_to_buy": 7,
+        "full_bar_purchase_cost_ksh": "14000",
+        "existing_pieces_used": 0,
+        "lower_bound_bars_without_existing": 7,
+        "bins": [
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2",
+              "1189.2"
+            ],
+            "used_mm": "5946.0",
+            "remaining_mm": "454.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "579.6",
+              "579.6",
+              "579.6",
+              "579.6",
+              "579.6",
+              "579.6"
+            ],
+            "used_mm": "3477.6",
+            "remaining_mm": "2923.2"
+          }
+        ],
+        "leftover_mm": [
+          "2923.2",
+          "454.8",
+          "454.8",
+          "454.8",
+          "454.8",
+          "454.8",
+          "454.8"
+        ],
+        "unplaced": []
+      },
+      {
+        "profile": "sash",
+        "status": "verified",
+        "issues": [],
+        "total_cuts": 72,
+        "required_length_mm": "44721.6",
+        "existing_available_mm": "0",
+        "ignored_unconfirmed_pieces": 0,
+        "shortage_length_mm": "44721.6",
+        "shortage_length_ft": "146.72440944881889763779527559",
+        "shortage_cost_proportional_ksh": "13973.753280839895013123359580",
+        "new_bars_to_buy": 8,
+        "full_bar_purchase_cost_ksh": "16000",
+        "existing_pieces_used": 0,
+        "lower_bound_bars_without_existing": 7,
+        "bins": [
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "782",
+              "782",
+              "782",
+              "782",
+              "782",
+              "782",
+              "782",
+              "782"
+            ],
+            "used_mm": "6256",
+            "remaining_mm": "144.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "782",
+              "782",
+              "782",
+              "782",
+              "782",
+              "782",
+              "782",
+              "782"
+            ],
+            "used_mm": "6256",
+            "remaining_mm": "144.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "782",
+              "782",
+              "782",
+              "782",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6"
+            ],
+            "used_mm": "6276.0",
+            "remaining_mm": "124.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6"
+            ],
+            "used_mm": "6296.0",
+            "remaining_mm": "104.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6"
+            ],
+            "used_mm": "6296.0",
+            "remaining_mm": "104.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6"
+            ],
+            "used_mm": "6296.0",
+            "remaining_mm": "104.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "629.6",
+              "324.8",
+              "324.8",
+              "324.8",
+              "324.8",
+              "324.8",
+              "324.8",
+              "324.8",
+              "324.8",
+              "324.8",
+              "324.8"
+            ],
+            "used_mm": "6396.0",
+            "remaining_mm": "4.8"
+          },
+          {
+            "source": "new",
+            "capacity_mm": "6400.8",
+            "cuts_mm": [
+              "324.8",
+              "324.8"
+            ],
+            "used_mm": "649.6",
+            "remaining_mm": "5751.2"
+          }
+        ],
+        "leftover_mm": [
+          "5751.2",
+          "144.8",
+          "144.8",
+          "124.8",
+          "104.8",
+          "104.8",
+          "104.8",
+          "4.8"
+        ],
+        "unplaced": []
+      }
+    ],
+    "total_new_bars": 37,
+    "full_bar_purchase_cost_ksh": "74000",
+    "status": "verified"
+  },
+  "stock_option_b": null,
+  "existing_stock_utilisation": null,
+  "panels": {
+    "groups": [
+      {
+        "width_mm": "687",
+        "height_mm": "1109.2",
+        "count": 10
+      },
+      {
+        "width_mm": "534.6",
+        "height_mm": "1109.2",
+        "count": 20
+      },
+      {
+        "width_mm": "229.8",
+        "height_mm": "499.6",
+        "count": 6
+      }
+    ],
+    "total_panels": 36
+  },
+  "rubber": {
+    "total_mm": "110428.8",
+    "total_metres": "110.4288",
+    "rate_per_metre_ksh": "32.80",
+    "consumption_cost_ksh": "3622.064640"
+  },
+  "fittings": {
+    "lines": [
+      {
+        "kind": "roller",
+        "total_quantity": 72,
+        "unit_price_ksh": "45",
+        "total_cost_ksh": "3240"
+      },
+      {
+        "kind": "crescent_lock",
+        "total_quantity": 18,
+        "unit_price_ksh": "150",
+        "total_cost_ksh": "2700"
+      },
+      {
+        "kind": "silver_screw",
+        "total_quantity": 144,
+        "unit_price_ksh": "1.50",
+        "total_cost_ksh": "216.00"
+      },
+      {
+        "kind": "black_mdf_screw",
+        "total_quantity": 144,
+        "unit_price_ksh": "0.75",
+        "total_cost_ksh": "108.00"
+      }
+    ],
+    "total_cost_ksh": "6264.00"
+  },
+  "labour": {
+    "small_windows": 3,
+    "small_rate_ksh": "500",
+    "large_windows": 15,
+    "large_rate_ksh": "700",
+    "total_ksh": "12000"
+  },
+  "transport": {
+    "status": "confirmed",
+    "amount_ksh": "850"
+  },
+  "glass_sheets": {
+    "lines": [
+      {
+        "rounded_width_ft": 2,
+        "rounded_height_ft": 2,
+        "windows": 3,
+        "status": "needs_fundi_confirmation",
+        "sheets": null,
+        "bonus_2x2_windows_not_applied": 0
+      },
+      {
+        "rounded_width_ft": 4,
+        "rounded_height_ft": 4,
+        "windows": 10,
+        "status": "confirmed",
+        "sheets": 5,
+        "bonus_2x2_windows_not_applied": 5
+      },
+      {
+        "rounded_width_ft": 5,
+        "rounded_height_ft": 4,
+        "windows": 5,
+        "status": "needs_fundi_confirmation",
+        "sheets": null,
+        "bonus_2x2_windows_not_applied": 0
+      }
+    ],
+    "status": "needs_fundi_confirmation",
+    "total_sheets": null,
+    "billed_area_sqft": null,
+    "cost_ksh": null
+  },
+  "totals_consumption": {
+    "basis": "consumption_only",
+    "aluminium_ksh": "64311.961004874390701162354707",
+    "rubber_ksh": "3622.064640",
+    "fittings_ksh": "6264.00",
+    "labour_ksh": "12000",
+    "glass_sheets_ksh": "0",
+    "transport_low_ksh": "850",
+    "transport_high_ksh": "850",
+    "total_low_ksh": "87048.02564487439070116235471",
+    "total_high_ksh": "87048.02564487439070116235471",
+    "confirmed": false,
+    "notes": [
+      "Glass sheets excluded from the total: some sizes need fundi confirmation."
+    ]
+  },
+  "totals_whole_bars": {
+    "basis": "whole_bars",
+    "aluminium_ksh": "74000",
+    "rubber_ksh": "3622.064640",
+    "fittings_ksh": "6264.00",
+    "labour_ksh": "12000",
+    "glass_sheets_ksh": "0",
+    "transport_low_ksh": "850",
+    "transport_high_ksh": "850",
+    "total_low_ksh": "96736.064640",
+    "total_high_ksh": "96736.064640",
+    "confirmed": false,
+    "notes": [
+      "Glass sheets excluded from the total: some sizes need fundi confirmation."
+    ]
+  },
+  "totals_existing_plus_purchase": null
+}

@@ -1,0 +1,9 @@
+target
+app
+.git
+.env
+render.env
+*.md
+deploy/*
+!deploy/supabase-ca.crt
+supabase-ca.crt

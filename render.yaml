@@ -1,0 +1,26 @@
+# Render "Blueprint": creates the Amber server as a Docker web service.
+# Secrets are NOT stored here: Render asks for them (or paste render.env,
+# made by deploy/make-render-env.ps1, into the service's Environment page).
+services:
+  - type: web
+    name: amber-server
+    runtime: docker
+    dockerfilePath: ./deploy/Dockerfile
+    dockerContext: .
+    plan: free
+    region: frankfurt
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: AMBER_CORS_ORIGIN
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: AMBER_DB_POOL
+        value: "5"
