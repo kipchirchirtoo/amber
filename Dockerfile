@@ -1,5 +1,5 @@
 # Amber Stores server image.
-# Build from the project root:  docker build -f deploy/Dockerfile -t amber-server .
+# Build from the project root:  docker build -t amber-server .
 # (docker compose does this for you; see deploy/README.md)
 
 FROM rust:1-bookworm AS build
